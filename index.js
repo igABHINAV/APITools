@@ -39,5 +39,5 @@ app.post('/send', async (req, res) => {
 
 
 
-const port = 8000; // or any other port number you prefer
+const port = process.env.PORT || 8000; // or any other port number you prefer
 app.listen(port);
